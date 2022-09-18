@@ -6,20 +6,7 @@ Schemas for the Api app
 from app.db import marshmallow
 from .models import Videodirectoy
 
-# class WalletSchema(marshmallow.Schema):
-#     """
-#     This class represents the wallet schema.
-#     """
-#     class Meta:
-#         fields = (
-#             'id', 'currency_code', 'open_exchange_price', 'requested_amount',
-#             'final_amount', 'created_on', 'updated_on'
-#         )
 
-
-# # pylint: disable=invalid-name
-# wallet_schema = WalletSchema()
-# wallets_schema = WalletSchema(many=True)
 class VideoSchema(marshmallow.Schema):
     class Meta:
         model = Videodirectoy
